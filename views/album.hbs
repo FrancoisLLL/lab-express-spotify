@@ -1,0 +1,14 @@
+<section>
+    <h1>Hi, this is the artist's albums</h1>
+</section>
+<section>
+    {{#each albums}}
+    <div>
+        <img src="{{this.images.0.url}}" class="img-album"><br>
+        Name : {{this.name}}<br> 
+        <form action="/albums/{{this.id}}/tracks">
+            <input type="submit" value="View tracks" />
+        </form>
+    </div>
+    {{/each}}
+</section>

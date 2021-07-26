@@ -1,0 +1,13 @@
+<section>
+    <h1>Hi, this is the album's tracks</h1>
+</section>
+<section>
+    {{#each tracks}}
+    <div>
+        Track : {{this.name}}<br>
+        <audio controls>
+            <source src="{{this.preview_url}}" type="audio/ogg">
+        </audio>
+    </div>
+    {{/each}}
+</section>

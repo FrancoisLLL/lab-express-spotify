@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+.img-artist {
+    height: 100px;
+}
+
+h1 {
+    color:red;
+}
